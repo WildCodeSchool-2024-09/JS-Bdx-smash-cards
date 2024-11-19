@@ -7,7 +7,7 @@ export default function GamePage() {
     <>
       <NavBar />
       <SmashCards />
-      <Footer />;
+      <Footer />
     </>
   );
 }

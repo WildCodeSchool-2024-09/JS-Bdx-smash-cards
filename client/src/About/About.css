@@ -43,15 +43,39 @@ img {
 .team-member.right p {
   text-align: left;
 }
+.team-member.left h2 {
+  text-align: right;
+  font-size: 2rem;
+}
+
+.team-member.right h2 {
+  text-align: left;
+  font-size: 2rem;
+}
 
 .team-member img {
-  width: 21rem;
-  height: 8.125rem;
+  width: 25rem;
+  height: auto;
   border-radius: 0.625rem;
   box-shadow: 2px 2px 2px 2px #0e0e0e;
   margin: 0 var(--size-spacing);
 }
+.team-member.left .linkedin {
+  text-align: right;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: var(--black-color);
+}
 
+.team-member.right .linkedin {
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: var(--black-color);
+}
+.team-member .linkedin:hover {
+  color: #e60013;
+}
 .text-container {
   display: flex;
   flex-direction: column;
@@ -64,7 +88,7 @@ img {
 }
 
 .text-container p {
-  margin: 0.3125rem 0 0;
+  margin: 0.3rem 0 0;
 }
 
 @media (max-width: 450px) {

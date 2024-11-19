@@ -20,7 +20,7 @@ export default function About() {
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/api/teamMembers`)
+    fetch(`${import.meta.env.VITE_API_URL}api/teamMembers`)
       .then((response) => response.json())
       .then((data) => setTeamMembers(data))
       .catch((error) =>
@@ -50,7 +50,9 @@ export default function About() {
                 <h2>
                   {member.name.first} {member.name.last}
                 </h2>
-                <p>Profil LinkedIn :</p>
+                <a className="linkedin" href={member.linkedin} target="blank">
+                  🔎 Linkedin
+                </a>
                 <p>{member.name.paragraph}</p>
               </section>
             </article>
