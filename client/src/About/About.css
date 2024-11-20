@@ -120,7 +120,7 @@ img {
 
   .text-container p {
     line-height: var(--size-spacing);
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .team-member.left p {
     flex-direction: row;
