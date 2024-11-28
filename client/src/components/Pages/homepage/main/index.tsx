@@ -31,7 +31,7 @@ export function Main() {
 
       <section className="button">
         <h2> Let's play </h2>
-        <button type="button"> Choisissez une difficulté !</button>
+
         <Link className="falsebutton" to="/GamePage">
           Start the game !
         </Link>

@@ -13,6 +13,17 @@
   }
 }
 
+button.load-more-button {
+  grid-column: 2 / 4;
+  justify-self: center;
+  margin-top: -20px;
+}
+
+button.load-more-button {
+  padding-left: 0%;
+  grid-column: span;
+}
+
 .gridcard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -29,67 +40,67 @@ figcaption {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centre dans les deux dimensions */
-}
+  transform: translate(-50%, -50%);
 
-.card {
-  background-color: var(--colortext);
-  color: var(--second-color);
-  border: solid 2px #0e0e0e;
-  box-shadow: -9px -1px 0px 1px #636262;
-}
-
-.card img {
-  background-color: var(--color-shadow);
-  box-shadow: inset 2px 2px 20px 4px #636262;
-  width: 15rem;
-  height: 18rem;
-}
-
-.search-bar {
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
-  margin-left: 35rem;
-  padding: 8px;
-  width: 40rem;
-  border: 1px solid black;
-  border-radius: 4px;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .gridcard {
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 1.25rem;
+  .card {
+    background-color: var(--colortext);
+    color: var(--second-color);
+    border: solid 2px #0e0e0e;
+    box-shadow: -9px -1px 0px 1px #636262;
   }
 
   .card img {
-    width: 10rem;
-    height: 12rem;
-  }
-
-  .card {
+    background-color: var(--color-shadow);
+    box-shadow: inset 2px 2px 20px 4px #636262;
     width: 15rem;
-    height: 20rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .gridcard {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding-left: 1rem;
+    height: 18rem;
   }
 
-  .card img {
-    width: 10rem;
-    height: 12rem;
+  .search-bar {
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 35rem;
+    padding: 8px;
+    width: 40rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
   }
 
-  .card {
-    width: 15rem;
-    height: 20rem;
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .gridcard {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 1.25rem;
+    }
+
+    .card img {
+      width: 10rem;
+      height: 12rem;
+    }
+
+    .card {
+      width: 15rem;
+      height: 20rem;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .gridcard {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding-left: 1rem;
+    }
+
+    .card img {
+      width: 10rem;
+      height: 12rem;
+    }
+
+    .card {
+      width: 15rem;
+      height: 20rem;
+    }
   }
 }

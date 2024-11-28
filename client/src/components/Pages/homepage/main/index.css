@@ -37,3 +37,10 @@ button {
   margin: 1rem;
   letter-spacing: 0;
 }
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding-top: 5rem;
+    padding-bottom: -2rem;
+  }
+}
