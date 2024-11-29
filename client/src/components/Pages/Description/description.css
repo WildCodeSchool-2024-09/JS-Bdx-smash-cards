@@ -12,7 +12,19 @@
     transition: none;
   }
 }
-
+button.load-more-button {
+  width: 15rem;
+  height: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.6s;
+  font-size: 1.25rem;
+}
+.container-modal p {
+  font-family: "Barlow", Courier, monospace;
+}
 .gridcard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -29,14 +41,14 @@ figcaption {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centre dans les deux dimensions */
+  transform: translate(-50%, -50%);
 }
 
 .card {
   background-color: var(--colortext);
   color: var(--second-color);
-  border: solid 2px #0e0e0e;
-  box-shadow: -9px -1px 0px 1px #636262;
+  border: solid 2px var(--second-color);
+  box-shadow: 3px 6px 10px 1px #636262;
 }
 
 .card img {
@@ -46,6 +58,24 @@ figcaption {
   height: 18rem;
 }
 
+.search-bar {
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 8px;
+  width: 40rem;
+  border: 1px solid var(--second-color);
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 5px 3px 10px 0px #636262;
+  background-color: var(--colortext);
+}
+.search-bar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .gridcard {
     grid-template-columns: repeat(2, 1fr);
@@ -53,13 +83,8 @@ figcaption {
   }
 
   .card img {
-    width: 10rem;
-    height: 12rem;
-  }
-
-  .card {
-    width: 15rem;
-    height: 20rem;
+    width: auto;
+    height: 17rem;
   }
 }
 
@@ -72,12 +97,10 @@ figcaption {
   }
 
   .card img {
-    width: 10rem;
-    height: 12rem;
-  }
-
-  .card {
     width: 15rem;
-    height: 20rem;
+    height: auto;
+  }
+  .search-bar {
+    width: 25em;
   }
 }
